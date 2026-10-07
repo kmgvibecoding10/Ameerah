@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emerald Tours — нетипичные туры для соло-путешественниц</title>
+<meta name="description" content="Emerald Tours: готовые нетипичные туры для женщин-путешественниц — Турция, Корея, Армения, Азербайджан.">
+<link rel="canonical" href="https://emeraldtours.kz/">
+<meta property="og:title" content="Emerald Tours">
+<meta property="og:description" content="Нетипичные туры для соло-путешественниц: Турция, Корея, Армения, Азербайджан">
+<meta property="og:image" content="https://emeraldtours.kz/images/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#faf6ee;--paper:#fffdf8;--sage:#6f8f72;--forest:#1f4a3a;--emerald:#0f7a5a;--moss:#a9bfa0;--clay:#c9805a;--sand:#efe6d3;--ink:#2b3a30;--muted:#66756a;--line:#e2d9c4;--radius:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px}
+img{display:block;width:100%;height:100%;object-fit:cover}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.15;color:var(--forest)}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.eyebrow{display:inline-block;font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:10px}
+.lead{color:var(--muted);max-width:640px;font-size:1.08rem}
+.section-head{margin-bottom:36px}
+.section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:12px}
+
+nav{position:sticky;top:0;z-index:20;background:rgba(250,246,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.logo{font-family:'Fraunces',serif;font-weight:700;color:var(--forest);text-decoration:none;font-size:1.25rem;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.logo i{width:14px;height:14px;background:var(--emerald);transform:rotate(45deg);border-radius:3px;display:inline-block}
+.logo span{color:var(--emerald)}
+.links{display:flex;gap:18px;font-weight:600;font-size:.93rem}
+.links a{text-decoration:none;color:var(--muted);white-space:nowrap}
+.links a:hover{color:var(--forest)}
+.lang{display:flex;gap:4px;background:var(--sand);padding:3px;border-radius:999px}
+.lang button{border:0;background:transparent;font:inherit;font-weight:700;font-size:.82rem;padding:5px 11px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.lang button.on{background:var(--emerald);color:#fff}
+
+.hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;color:#fff;padding:0}
+.hero .bg{position:absolute;inset:0}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,50,38,.25),rgba(15,50,38,.82))}
+.hero .wrap{position:relative;padding:120px 20px 64px}
+.hero h1{color:#fff;font-size:clamp(2.3rem,6vw,4.4rem);max-width:780px}
+.hero p{max-width:560px;margin:18px 0 28px;font-size:1.15rem;color:#eef3e8}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--clay);color:#fff}
+.btn-primary:hover{background:#b56e49}
+.btn-ghost{border:2px solid rgba(255,255,255,.75);color:#fff;margin-left:10px}
+.btn-ghost:hover{background:rgba(255,255,255,.15)}
+
+.welcome{background:var(--paper)}
+.welcome-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.welcome h2{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:16px}
+.welcome p+p{margin-top:14px}
+.how{margin-top:24px;font-size:.95rem;color:var(--muted)}
+.principles{display:grid;gap:14px}
+.principle{display:flex;gap:14px;background:var(--sand);padding:16px 18px;border-radius:16px}
+.principle b{display:block;color:var(--forest)}
+.principle .ic{font-size:1.5rem;line-height:1}
+
+.countries{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.country{position:relative;aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;text-decoration:none;color:#fff;display:flex;align-items:flex-end;box-shadow:0 10px 30px rgba(31,74,58,.14)}
+.country img{position:absolute;inset:0;transition:transform .5s}
+.country:hover img{transform:scale(1.06)}
+.country::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(12,38,28,.9))}
+.country div{position:relative;z-index:1;padding:20px}
+.country h3{color:#fff;font-size:1.45rem}
+.country small{display:block;opacity:.92;font-size:.9rem}
+.country .dur{display:inline-block;margin-top:8px;background:var(--emerald);padding:2px 12px;border-radius:999px;font-size:.78rem;font-weight:700}
+
+.route{padding:64px 0;border-top:1px solid var(--line)}
+.route.alt{background:var(--paper)}
+.route-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:28px}
+.route-head h2{font-size:clamp(1.9rem,4.2vw,3rem)}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.facts span{background:var(--sand);padding:6px 14px;border-radius:999px;font-size:.88rem;font-weight:600;color:var(--forest)}
+.facts span.price{background:var(--emerald);color:#fff}
+.photos{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:340px}
+.photos figure{border-radius:18px;overflow:hidden;position:relative}
+.photos figure:first-child{grid-row:1/3}
+.photos figcaption{position:absolute;left:10px;bottom:8px;font-size:.78rem;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+.days{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.day{flex:1 1 160px;background:var(--sand);border-radius:16px;padding:14px 16px;font-size:.92rem}
+.day b{display:block;color:var(--clay);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.route.alt .card{background:var(--cream)}
+.card h4{font-family:'Fraunces',serif;font-size:1.12rem;color:var(--forest);margin-bottom:10px}
+.card ul{list-style:none}
+.card li{padding:7px 0 7px 18px;position:relative;font-size:.95rem;border-bottom:1px dashed var(--line)}
+.card li:last-child{border:0}
+.card li::before{content:"";position:absolute;left:0;top:15px;width:7px;height:7px;border-radius:50%;background:var(--sage)}
+.card.hidden{background:var(--forest)!important;border-color:var(--forest);color:#eef3ea}
+.card.hidden h4{color:#f2d9c5}
+.card.hidden li{border-color:rgba(255,255,255,.18)}
+.card.hidden li::before{background:var(--clay)}
+.sub{margin:40px 0 18px;font-size:1.6rem}
+.sub:first-of-type{margin-top:0}
+.btn-tour{margin-top:26px;background:var(--emerald);color:#fff}
+.btn-tour:hover{background:var(--forest)}
+
+.stays{background:linear-gradient(180deg,#e9f1e4,#f3f7ef)}
+.stay-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.stay{background:#fff;border-radius:var(--radius);padding:22px;border:1px solid #d6e3cf}
+.stay .city{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--emerald)}
+.stay h4{font-family:'Fraunces',serif;font-size:1.2rem;color:var(--forest);margin:4px 0 8px}
+.stay p{font-size:.94rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chips span{background:#e3efdd;color:var(--forest);font-size:.76rem;font-weight:700;padding:3px 10px;border-radius:999px}
+
+.halal-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:36px;align-items:start}
+.halal-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.halal-photos figure{border-radius:18px;overflow:hidden;aspect-ratio:1/1;position:relative}
+.halal-photos figure:first-child{grid-column:1/3;aspect-ratio:16/9}
+.halal-photos figcaption{position:absolute;left:10px;bottom:8px;font-size:.78rem;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+.halal-list{display:grid;gap:12px}
+.halal-item{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px 20px}
+.halal-item b{color:var(--forest)}
+.halal-item span{display:block;color:var(--muted);font-size:.94rem}
+
+.reviews{background:var(--sand)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{background:var(--paper);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:12px}
+.stars{color:#e0a43a;letter-spacing:2px}
+.rev p{font-size:.96rem}
+.rev footer{margin-top:auto;font-size:.85rem;color:var(--muted)}
+.rev footer b{color:var(--forest);display:block}
+
+.safety{background:var(--forest);color:#eaf0e5}
+.safety h2{color:#fff;margin-bottom:28px;font-size:clamp(1.8rem,3.5vw,2.5rem)}
+.safety-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.safety-grid div{background:rgba(255,255,255,.08);border-radius:18px;padding:20px}
+.safety-grid b{display:block;color:#f2d9c5;margin-bottom:6px}
+
+.contacts{text-align:center;background:var(--paper)}
+.contacts h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:12px}
+.contacts .lead{margin:0 auto 30px}
+.contact-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.contact-row a{padding:16px 30px;border-radius:999px;text-decoration:none;font-weight:700;color:#fff;transition:.2s}
+.c-wa{background:#1f9d62}.c-ig{background:linear-gradient(45deg,#e0803a,#c9306a,#7b3fb8)}
+.contact-row a:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.pk-wrap{margin-top:40px}
+.pk-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}
+.pk{background:var(--paper);border:2px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column}
+.route.alt .pk{background:var(--cream)}
+.pk.pro{border-color:var(--emerald);background:linear-gradient(180deg,#eaf5ee,var(--paper))}
+.pk h4{font-family:'Fraunces',serif;font-size:1.4rem;color:var(--forest)}
+.pk .pr{font-size:1.7rem;font-weight:700;color:var(--emerald);margin:4px 0 12px}
+.pk .pr small{font-size:.8rem;font-weight:600;color:var(--muted)}
+.pk ul{list-style:none;margin-bottom:18px}
+.pk li{padding:5px 0 5px 24px;position:relative;font-size:.94rem}
+.pk li::before{content:"✓";position:absolute;left:0;color:var(--emerald);font-weight:700}
+.pk .btn{margin-top:auto;text-align:center;border:0;cursor:pointer;font:inherit;font-weight:700;background:var(--emerald);color:#fff}
+.pk:not(.pro) .btn{background:var(--forest)}
+.dates{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px}
+.dates b{font-size:.9rem;color:var(--forest)}
+.dates button{border:1px solid var(--moss);background:#fff;border-radius:999px;padding:6px 14px;font:inherit;font-size:.88rem;font-weight:700;color:var(--forest);cursor:pointer}
+.dates button:hover{background:var(--emerald);color:#fff;border-color:var(--emerald)}
+.pknote{font-size:.82rem;color:var(--muted);margin-top:10px}
+.form{max-width:640px;margin:0 auto 34px;background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:28px;text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form label{display:flex;flex-direction:column;gap:4px;font-size:.85rem;font-weight:700;color:var(--forest)}
+.form .full{grid-column:1/3}
+.form input,.form select,.form textarea{font:inherit;font-weight:400;font-size:1rem;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--emerald);border-color:transparent}
+.form button{grid-column:1/3;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:1.05rem;padding:15px;border-radius:999px;background:#1f9d62;color:#fff}
+.form button:hover{background:var(--forest)}
+.fnote{grid-column:1/3;font-size:.82rem;color:var(--muted);text-align:center}
+.or{margin:0 0 16px;color:var(--muted);font-size:.9rem}
+@media(max-width:700px){.pk-grid,.form{grid-template-columns:1fr}.form .full,.form button,.fnote{grid-column:1}}
+footer.foot{padding:28px 0;text-align:center;font-size:.85rem;color:var(--muted)}
+footer.foot a{color:var(--clay)}
+
+@media(max-width:900px){
+ .welcome-grid,.route-head,.halal-grid{grid-template-columns:1fr}
+ .countries{grid-template-columns:repeat(2,1fr)}
+ .rev-grid{grid-template-columns:1fr 1fr}
+ .links{display:none}
+ .photos{height:280px}
+ section{padding:56px 0}
+}
+@media(max-width:560px){
+ .rev-grid{grid-template-columns:1fr}
+ .btn-ghost{margin:10px 0 0}
+ .photos{grid-template-columns:1fr 1fr;grid-template-rows:200px 120px;height:auto}
+ .photos figure:first-child{grid-column:1/3;grid-row:1}
+ .logo{font-size:1.05rem}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top"><i></i>Emerald <span>Tours</span></a>
+  <div class="links" id="links"></div>
+  <div class="lang" id="lang">
+    <button data-l="ru">RU</button><button data-l="kk">ҚАЗ</button><button data-l="en">EN</button>
+  </div>
+</div></nav>
+<main id="app"></main>
+
+<script>
+/* ---------- Данные (фото, номера, ссылки) ---------- */
+const WA = "https://wa.me/70000000000";            // ← поставьте номер
+const IG = "https://instagram.com/emerald.tours";  // ← поставьте аккаунт
+const TOURS = [
+ {id:"turkey", flag:"🇹🇷", photos:["sumela","mardin2","uzungol"], cap:["Sumela","Mardin","Uzungöl"], card:"mardin1", d:"7–10", simple:290000, pro:480000, dates:["2027-05-22","2027-06-12","2027-09-18"]},
+ {id:"korea",  flag:"🇰🇷", photos:["jeju","busan","daegu"], cap:["Jeju","Busan","Daegu"], card:"busan", d:"10–14", simple:420000, pro:700000, dates:["2027-04-10","2027-05-08","2027-10-16"]},
+ {id:"armenia",flag:"🇦🇲", photos:["khorvirap","yerevan","sevan"], cap:["Khor Virap","Yerevan","Sevan"], card:"khorvirap", d:"4–5", simple:120000, pro:210000, dates:["2026-11-07","2026-12-05","2027-05-15"]},
+ {id:"azerbaijan",flag:"🇦🇿", photos:["sheki","baku","khinalug"], cap:["Sheki","Baku","Khinalug"], card:"sheki", d:"4–6", simple:130000, pro:230000, dates:["2026-11-21","2026-12-19","2027-05-29"]}
+];
+/* ПРИМЕР: цены (₸ с человека, без авиабилетов) и даты — черновые, замените на свои */
+const X = {
+ru:{loc:"ru-RU", pkgH:"Выбери пакет", simple:"Простой", pro:"Pro", per:"с человека, без авиабилетов",
+ simpleInc:["Группа до 10 девушек","Жильё: женские дормы и гестхаусы","Завтраки","Местный транспорт и план маршрута","Куратор в чате 24/7"],
+ proInc:["Всё из пакета «Простой»","Приватный номер или комната на двоих","Группа до 6 девушек","Все трансферы и входные билеты","Hidden-локации и ужины","Халяль-подборка и сопровождающая"],
+ pick:"Выбрать", dates:"Ближайшие выезды:", note:"Цены и даты ориентировочные, точные — после заявки.",
+ fH:"Оставить заявку", fOr:"Заполни форму — она откроет WhatsApp с готовым сообщением. Или напиши напрямую:",
+ fName:"Имя", fContact:"WhatsApp или Instagram", fTour:"Тур", fPkg:"Пакет", fDate:"Дата выезда", fPeople:"Сколько человек", fComment:"Пожелания", fSend:"Отправить в WhatsApp",
+ fNote:"Мы не храним ваши данные — форма просто открывает WhatsApp.", fAny:"Пока не знаю",
+ msg:(o)=>`Здравствуйте! Заявка на тур Emerald Tours.\nИмя: ${o.name}\nКонтакт: ${o.contact}\nТур: ${o.tour}\nПакет: ${o.pkg}\nДата: ${o.date}\nЧеловек: ${o.people}\nПожелания: ${o.comment||"—"}`},
+kk:{loc:"kk-KZ", pkgH:"Пакетті таңда", simple:"Қарапайым", pro:"Pro", per:"адамға, авиабилетсіз",
+ simpleInc:["10 қызға дейінгі топ","Тұру: әйелдер дормы және қонақ үйлер","Таңғы ас","Жергілікті көлік және маршрут жоспары","Чаттағы куратор 24/7"],
+ proInc:["«Қарапайым» пакетінің барлығы","Жеке бөлме немесе екіге арналған бөлме","6 қызға дейінгі топ","Барлық трансфер және кіру билеттері","Hidden-орындар және кешкі асы","Халал тізімі және ілесіп жүретін гид"],
+ pick:"Таңдау", dates:"Жақын шығулар:", note:"Баға мен күндер шамамен, нақтысы — өтінімнен кейін.",
+ fH:"Өтінім қалдыру", fOr:"Форманы толтыр — ол дайын хабарламамен WhatsApp-ты ашады. Немесе тікелей жаз:",
+ fName:"Аты", fContact:"WhatsApp немесе Instagram", fTour:"Тур", fPkg:"Пакет", fDate:"Шығу күні", fPeople:"Неше адам", fComment:"Тілектер", fSend:"WhatsApp-қа жіберу",
+ fNote:"Деректеріңізді сақтамаймыз — форма тек WhatsApp-ты ашады.", fAny:"Әзірге білмеймін",
+ msg:(o)=>`Сәлем! Emerald Tours турына өтінім.\nАты: ${o.name}\nБайланыс: ${o.contact}\nТур: ${o.tour}\nПакет: ${o.pkg}\nКүні: ${o.date}\nАдам саны: ${o.people}\nТілектер: ${o.comment||"—"}`},
+en:{loc:"en-GB", pkgH:"Choose a package", simple:"Simple", pro:"Pro", per:"per person, flights not included",
+ simpleInc:["Group of up to 10 women","Stays: women's dorms and guesthouses","Breakfasts","Local transport and route plan","Chat host 24/7"],
+ proInc:["Everything in Simple","Private room or twin room","Group of up to 6 women","All transfers and entry tickets","Hidden spots and dinners","Halal list and an accompanying guide"],
+ pick:"Choose", dates:"Upcoming departures:", note:"Prices and dates are approximate; final ones after your request.",
+ fH:"Send a request", fOr:"Fill in the form — it opens WhatsApp with a ready message. Or write directly:",
+ fName:"Name", fContact:"WhatsApp or Instagram", fTour:"Tour", fPkg:"Package", fDate:"Departure date", fPeople:"Number of people", fComment:"Wishes", fSend:"Send via WhatsApp",
+ fNote:"We don't store your data — the form just opens WhatsApp.", fAny:"Not sure yet",
+ msg:(o)=>`Hello! Request for an Emerald Tours trip.\nName: ${o.name}\nContact: ${o.contact}\nTour: ${o.tour}\nPackage: ${o.pkg}\nDate: ${o.date}\nPeople: ${o.people}\nWishes: ${o.comment||"—"}`}
+};
+const HALALPH = ["food-kebab","food-plov","food-lavash"];
+const STAYS_META = [
+ {c:"turkey"},{c:"turkey"},{c:"korea"},{c:"korea"},{c:"korea"},{c:"armenia"},{c:"armenia"},{c:"azerbaijan"},{c:"azerbaijan"}
+];
+
+/* ---------- Тексты ---------- */
+const L = {
+ru:{
+ nav:["Привет","Туры","Жильё","Халяль","Отзывы","Контакты"],
+ heroTag:"Нетипичные туры для соло-путешественниц",
+ heroH:"Путешествуй одна — и не чувствуй себя одинокой",
+ heroP:"Emerald Tours — готовые маршруты по местам, куда редко доходят туристы. Небольшие группы, женские комнаты и тёплая атмосфера.",
+ heroB1:"Выбрать тур", heroB2:"Написать в WhatsApp",
+ wTag:"Добро пожаловать", wH:"Привет! Я Аймира, и это мои любимые маршруты",
+ wP1:"Я сама путешествую соло и знаю, чего не хватает в обычных турах: спокойствия, чистых и безопасных мест и времени, чтобы просто сидеть с чашкой чая и смотреть на горы.",
+ wP2:"Здесь — готовые «нетипичные» туры: вместо очередей у главных достопримечательностей — деревни, тропы, тихие кофейни и дома местных хозяек.",
+ how:"⏱ За 10 минут: 1 мин — выбрать направление · 6 мин — тур и места · 3 мин — жильё, халяль, отзывы.",
+ pr:[["🌿","Экологично","Местный транспорт, пешие тропы, семейные гостевые дома и кофейни с местными зёрнами."],["🌸","Комфорт для каждой","Приватные комнаты, женские этажи, тихие места. Ценим скромный стиль и личные границы каждой путешественницы."],["☕","Без спешки","Не «50 точек за день», а 2–3 места и время, чтобы почувствовать город."]],
+ cTag:"Направления", cH:"Куда поедем?", cP:"Четыре готовых тура. Ближние — на выходные и бюджетно, дальние — на 1–2 недели.",
+ days:"дней", from:"Цена — по запросу в WhatsApp", seeTour:"Смотреть тур",
+ labelDays:"План по дням", labelPlaces:"📍 Локации", labelCafe:"☕ Кофейни и чайные", labelHidden:"🗝 Hidden-места",
+ askTour:"Хочу этот тур",
+ tours:{
+  turkey:{name:"Турция: Трабзон и Мардин", sub:"Туман Чёрного моря и каменный город Месопотамии", season:"Лучше: май–июнь, сентябрь",
+   plan:["Трабзон: центр и чайные террасы Бозтепе","Монастырь Сумела утром, Узунгёль вечером","Озеро Сера и тропы в горах","Перелёт в Мардин","Старый город Мардина","Дейрульзафаран и древняя Дара","Савур и свободное время"],
+   places:["Монастырь Сумела — приезжай к открытию","Узунгёль — озеро и деревянные дома","Медресе Касымие и Зинджирие","Дейрульзафаран на рассвете"],
+   cafe:["Чайные сады Бозтепе с видом на море","Террасы на крышах Мардина","Мардинский кофе «дибек» с терпким ароматом"],
+   hidden:["Озеро Сера в Мачке — тишина и туман","Яйла Хыдырнеби — высокогорные луга","Савур — городок «замершего времени»"]},
+  korea:{name:"Корея: Чеджу, Пусан и Тэгу", sub:"Океан, цветные кварталы и хайкинг в горах", season:"Лучше: апрель–май, октябрь",
+   plan:["Чеджу: Сонсан Ильчульбон и побережье","Тропы Олле, прибрежные кафе","Ханрасан — подъём на вулкан","Перелёт в Пусан, Гамчхон","Хэундэ, храм у моря Хэдон Ёнгунса","Тэгу: горы Пхальгонсан","Тэгу: хайкинг Апсан, ночные рынки"],
+   places:["Сонсан Ильчульбон — рассвет на кратере","Деревня Гамчхон в Пусане","Пхальгонсан и канатная дорога в Тэгу","Апсан — городская тропа с видом на Тэгу"],
+   cafe:["Кофейни на побережье Чеджу","Маленькие кафе в переулках Гамчхона","Чайные дома в Тэгу после хайкинга"],
+   hidden:["Остров Удо у Чеджу — на велосипеде","Тропы Олле, которые мало кто проходит","Тихие маршруты Апсана на закате"]},
+  armenia:{name:"Армения без толп", sub:"Монастыри, озеро и вино — на выходные", season:"Лучше: май, сентябрь",
+   plan:["Ереван: Каскад и вечерние улицы","Хор Вирап и вино Ареника","Гарни, Гегард","Севан и Дилижан","Свободное утро в Ереване"],
+   places:["Хор Вирап — лучший вид на Арарат","Гарни и Гегард","Севанаванк на рассвете","Дилижанские леса"],
+   cafe:["Кофейни у Каскада","Армянский кофе по-восточному на песке","Домашняя гата в Дилижане"],
+   hidden:["Ахпат и Санаин в ущелье Дебед","Деревня Ареник с виноградниками","Берег Севана вне сезона"]},
+  azerbaijan:{name:"Азербайджан: Шеки и Хыналыг", sub:"Старый Баку, шёлковый город и высокие горы", season:"Лучше: апрель–июнь, сентябрь",
+   plan:["Баку: Ичеришехер и набережная","Гобустан и грязевые вулканы","Дорога в Шеки","Дворец ханов и караван-сарай","Хыналыг: ночь в горах","Лахидж и возвращение"],
+   places:["Ичеришехер и Девичья башня","Дворец шекинских ханов","Гобустан — наскальные рисунки","Караван-сараи Шеки"],
+   cafe:["Чайханы с чаем в стаканчиках армуды","Шекинская пахлава","Кофейни улицы Низами"],
+   hidden:["Хыналыг — один из самых высоких посёлков Кавказа","Лахидж — мастера-медники","Старые мечети вокруг Шеки"]}
+ },
+ sTag:"Жильё", sH:"Отели и хостелы для женщин", sP:"Проверенные дома с женскими комнатами, приватностью и заботливыми хозяйками. Подходят для любой путешественницы, в том числе для тех, кто предпочитает закрытый стиль.",
+ stays:[
+  ["Trabzon","Yeşil Çay Konağı","Семейный пансион с хозяйкой, домашний завтрак с видом на чайные холмы.",["Женская хозяйка","Приватный двор"]],
+  ["Mardin","Taş Avlu Hanım Evi","Каменный дом с закрытым двором в старом городе. Завтрак можно взять в номер.",["Закрытый двор","Тишина"]],
+  ["Jeju","Tangerine Women's Guesthouse","Гестхаус для женщин у побережья, мандариновый сад и общая кухня.",["Только женщины","Кухня"]],
+  ["Busan","Gamcheon Sora Hostel","Женские дормы и общая терраса с видом на цветные дома.",["Женский дорм","Терраса"]],
+  ["Daegu","Palgong Pine Stay","Дом у подножия гор для хайкеров: сушилка для вещей и ранний завтрак.",["Для хайкеров","Ранний завтрак"]],
+  ["Yerevan","Apricot Courtyard Hostel","Женская комната в двух шагах от Каскада, закрытый дворик.",["Женская комната","Центр"]],
+  ["Dilijan","Linden House","Деревянный дом в лесу, хозяйка готовит домашние завтраки.",["Семейный дом","Тишина"]],
+  ["Baku","Pomegranate Courtyard Hostel","Хостел в старом городе с женскими комнатами и круглосуточной стойкой.",["Женские комнаты","24/7"]],
+  ["Sheki","Silk Road Guesthouse","Гостевой дом у караван-сарая: приватные комнаты и веранда.",["Приватно","Веранда"]]
+ ],
+ hTag:"Халяль-гид", hH:"Вкусно и спокойно: еда без вопросов", hP:"Подборка, где легко найти халяль или подходящую еду. В каждом направлении подскажу места рядом с жильём.",
+ halal:[["🇹🇷 Турция","Почти везде халяль: кебабы, пиде, лахмаджун, местные сладости."],["🇦🇿 Азербайджан","Плов, дюшбара, кутабы — привычная еда на каждом шагу."],["🇦🇲 Армения","Лаваш, овощи, сыры; халяльные места ищем заранее в Ереване."],["🇰🇷 Корея","Халяль-рестораны есть в Сеуле, Пусане и Тэгу; на Чеджу — морепродукты и вегетарианские кафе."],["📱 Лайфхак","Фильтр «Halal» в картах, список мест и молельных комнат — в пакете тура."]],
+ hCap:["Турция","Азербайджан","Армения"],
+ rTag:"Отзывы", rH:"Что говорят путешественницы",
+ revs:[
+  ["Мадина К.","Алматы","Турция",5,"Сумела на рассвете без толпы — это что-то невероятное. В Мардине хозяйка дома сама учила варить кофе."],
+  ["Алия С.","Астана","Корея",5,"Тэгу стал неожиданным открытием: хайкинг утром и тёплый чай вечером. Одной ни разу не было страшно."],
+  ["Жанна Т.","Шымкент","Армения",5,"За 4 дня увидела больше, чем думала. Бюджетно, душевно, группа маленькая."],
+  ["Дина Р.","Караганда","Азербайджан",5,"Хыналыг — как другая планета. Спасибо за женский хостел и заботу о каждой детали."],
+  ["Сабина Н.","Актау","Турция",5,"Мне важна приватность, и в жилье всё продумано. Халяль-подборка очень выручила."],
+  ["Лейла А.","Алматы","Корея",5,"Чеджу и тропы Олле — мечта. Организация без суеты, без «50 точек за день»."],
+  ["Айгерим Б.","Тараз","Азербайджан",5,"Шеки и пахлава — отдельная любовь! Девочки в группе стали подругами."],
+  ["Камила М.","Астана","Армения",4,"Дилижан зимой был сказочным. Хочется ещё и летом."],
+  ["Алина Ж.","Алматы","Корея",5,"Первый раз ехала за границу одна — и это самое тёплое путешествие в моей жизни."]
+ ],
+ safeH:"Спокойная поездка: 4 простых правила",
+ safe:[["Делись маршрутом","Адреса ночёвок и номера рейсов — близким."],["Заселяйся до заката","Первое заселение лучше планировать днём."],["Читай отзывы","Смотри отзывы женщин-путешественниц."],["Уважай местные нормы","Лёгкий шарф и закрытая одежда пригодятся в храмах."]],
+ kTag:"Контакты", kH:"Давай выберем твой тур", kP:"Напиши в WhatsApp или Instagram: направление, даты и бюджет — отвечу в течение дня.",
+ foot:"Фото: Wikimedia Commons (свободные лицензии). Emerald Tours — путешествуем бережно 🌱"
+},
+kk:{
+ nav:["Сәлем","Турлар","Тұру","Халал","Пікірлер","Байланыс"],
+ heroTag:"Жалғыз саяхатшы әйелдерге арналған ерекше турлар",
+ heroH:"Жалғыз саяхатта — бірақ жалғыздықты сезінбе",
+ heroP:"Emerald Tours — туристер сирек баратын жерлерге дайын маршруттар. Шағын топтар, әйелдерге арналған бөлмелер және жылы атмосфера.",
+ heroB1:"Турды таңдау", heroB2:"WhatsApp-қа жазу",
+ wTag:"Қош келдің", wH:"Сәлем! Мен Аймира, бұл — менің сүйікті маршруттарым",
+ wP1:"Мен өзім де жалғыз саяхаттаймын және қарапайым турларда не жетіспейтінін білемін: тыныштық, таза әрі қауіпсіз орындар және шай ішіп таулармен ләззат алуға уақыт.",
+ wP2:"Мұнда — дайын «ерекше» турлар: басты көрікті жерлердегі кезектің орнына ауылдар, соқпақтар, тыныш кофейнялар және жергілікті әйелдердің үйлері.",
+ how:"⏱ 10 минутта: 1 мин — бағытты таңдау · 6 мин — тур және орындар · 3 мин — тұру, халал, пікірлер.",
+ pr:[["🌿","Экологиялық","Жергілікті көлік, жаяу соқпақтар, отбасылық қонақ үйлер және жергілікті кофе."],["🌸","Әрбіріңе жайлы","Жеке бөлмелер, әйелдер қабаты, тыныш орындар. Қарапайым стильді және жеке шекараны құрметтейміз."],["☕","Асықпай","Күніне 50 нүкте емес, 2–3 орын және қаланы сезінуге уақыт."]],
+ cTag:"Бағыттар", cH:"Қайда барамыз?", cP:"Төрт дайын тур. Жақындары — демалысқа және үнемді, алыстары — 1–2 аптаға.",
+ days:"күн", from:"Бағасы — WhatsApp-та", seeTour:"Турды көру",
+ labelDays:"Күн бойынша жоспар", labelPlaces:"📍 Орындар", labelCafe:"☕ Кофейня мен шайхана", labelHidden:"🗝 Hidden-орындар",
+ askTour:"Осы турды қалаймын",
+ tours:{
+  turkey:{name:"Түркия: Трабзон және Мардин", sub:"Қара теңіз тұманы мен Месопотамияның тас қаласы", season:"Жақсысы: мамыр–маусым, қыркүйек",
+   plan:["Трабзон: орталық және Бозтепе шай террасалары","Таңертең Сумела, кешке Узунгёль","Сера көлі және тау соқпақтары","Мардинге ұшу","Мардиннің ескі қаласы","Дейрульзафаран және ежелгі Дара","Савур және бос уақыт"],
+   places:["Сумела монастыры — ашылғанда бар","Узунгёль — көл және ағаш үйлер","Касымие және Зинджирие медресесі","Таңертең Дейрульзафаран"],
+   cafe:["Теңіз көрінетін Бозтепе шай бақтары","Мардин төбелеріндегі террасалар","Мардин кофесі «дибек»"],
+   hidden:["Мачкадағы Сера көлі — тыныштық пен тұман","Хыдырнеби жайлауы","Савур — «уақыт тоқтаған» шағын қала"]},
+  korea:{name:"Корея: Чеджу, Пусан және Тэгу", sub:"Мұхит, түрлі-түсті шағынаудандар және тау жорығы", season:"Жақсысы: сәуір–мамыр, қазан",
+   plan:["Чеджу: Сонсан Ильчульбон және жағалау","Олле соқпақтары, жағалаудағы кафелер","Халласан — жанартауға шығу","Пусанға ұшу, Гамчхон","Хэундэ, теңіздегі Хэдон Ёнгунса храмы","Тэгу: Пхальгонсан таулары","Тэгу: Апсан жорығы, түнгі базарлар"],
+   places:["Сонсан Ильчульбон — кратердегі таң","Пусандағы Гамчхон ауылы","Тэгудегі Пхальгонсан және аспалы жол","Апсан — Тэгу көрінетін қала соқпағы"],
+   cafe:["Чеджу жағалауындағы кофейнялар","Гамчхон көшелеріндегі шағын кафелер","Жорықтан кейін Тэгудегі шай үйлері"],
+   hidden:["Чеджу маңындағы Удо аралы — велосипедпен","Көп адам баспайтын Олле соқпақтары","Күн батарда Апсанның тыныш жолдары"]},
+  armenia:{name:"Армения — шудан алыс", sub:"Монастырьлар, көл және шарап — демалысқа", season:"Жақсысы: мамыр, қыркүйек",
+   plan:["Ереван: Каскад және кешкі көшелер","Хор Вирап және Арени шарабы","Гарни, Гегард","Севан және Дилижан","Ереванда бос таң"],
+   places:["Хор Вирап — Арарат көрінісі","Гарни және Гегард","Таңертең Севанаванк","Дилижан ормандары"],
+   cafe:["Каскад жанындағы кофейнялар","Құмдағы шығыс кофесі","Дилижандағы үйдің гата тәттісі"],
+   hidden:["Дебед шатқалындағы Ахпат және Санаин","Жүзімдіктері бар Арени ауылы","Маусымнан тыс Севан жағасы"]},
+  azerbaijan:{name:"Әзірбайжан: Шеки және Хыналыг", sub:"Ескі Баку, жібек қаласы және биік таулар", season:"Жақсысы: сәуір–маусым, қыркүйек",
+   plan:["Баку: Ичеришехер және жағалау","Гобустан және балшық жанартаулары","Шекиге жол","Хандар сарайы және керуен-сарай","Хыналыг: тауда түнеу","Лахидж және оралу"],
+   places:["Ичеришехер және Қыз мұнарасы","Шеки хандарының сарайы","Гобустан — жартас суреттері","Шекидегі керуен-сарайлар"],
+   cafe:["Армуды стақандағы шайхана","Шеки пахлавасы","Низами көшесіндегі кофейнялар"],
+   hidden:["Хыналыг — Кавказдағы ең биік елді мекендердің бірі","Лахидж — мыс ұсталары","Шеки төңірегіндегі көне мешіттер"]}
+ },
+ sTag:"Тұру", sH:"Әйелдерге арналған қонақ үй мен хостелдер", sP:"Әйелдер бөлмесі, жекелік және қамқор иелері бар тексерілген үйлер. Кез келген саяхатшыға, оның ішінде жабық стильді қалайтындарға да ыңғайлы.",
+ stays:[
+  ["Trabzon","Yeşil Çay Konağı","Иесі әйел отбасылық пансион, шай төбелері көрінетін таңғы ас.",["Әйел иесі","Жеке аула"]],
+  ["Mardin","Taş Avlu Hanım Evi","Ескі қаладағы жабық ауласы бар тас үй. Таңғы асты бөлмеге алуға болады.",["Жабық аула","Тыныштық"]],
+  ["Jeju","Tangerine Women's Guesthouse","Жағалаудағы тек әйелдерге арналған үй, мандарин бағы және ортақ ас үй.",["Тек әйелдер","Ас үй"]],
+  ["Busan","Gamcheon Sora Hostel","Әйелдер дормы және түрлі-түсті үйлер көрінетін терраса.",["Әйелдер дормы","Терраса"]],
+  ["Daegu","Palgong Pine Stay","Таудың етегіндегі үй: киім кептіргіш және ерте таңғы ас.",["Жорықшыларға","Ерте таңғы ас"]],
+  ["Yerevan","Apricot Courtyard Hostel","Каскадтан екі қадам жерде әйелдер бөлмесі, жабық аула.",["Әйелдер бөлмесі","Орталық"]],
+  ["Dilijan","Linden House","Ормандағы ағаш үй, иесі үйде пісірілген таңғы ас дайындайды.",["Отбасылық үй","Тыныштық"]],
+  ["Baku","Pomegranate Courtyard Hostel","Ескі қаладағы хостел: әйелдер бөлмелері және тәулік бойы ресепшн.",["Әйелдер бөлмелері","24/7"]],
+  ["Sheki","Silk Road Guesthouse","Керуен-сарай жанындағы үй: жеке бөлмелер және веранда.",["Жекелік","Веранда"]]
+ ],
+ hTag:"Халал-гид", hH:"Дәмді әрі жайлы: тамақ сұрақсыз", hP:"Халал немесе қолайлы тамақты оңай табатын таңдау. Әр бағытта тұратын жеріңнің жанынан орын айтамын.",
+ halal:[["🇹🇷 Түркия","Барлық жерде дерлік халал: кебаб, пиде, лахмаджун, жергілікті тәттілер."],["🇦🇿 Әзірбайжан","Палау, дюшбара, кутаб — әр қадамда таныс тағам."],["🇦🇲 Армения","Лаваш, көкөніс, ірімшік; халал орындарды Ереванда алдын ала іздейміз."],["🇰🇷 Корея","Сеул, Пусан, Тэгуде халал мейрамханалар бар; Чеджуда — теңіз өнімдері мен вегетариандық кафелер."],["📱 Лайфхак","Карталардағы «Halal» сүзгісі, орындар мен намаз бөлмелерінің тізімі — тур пакетінде."]],
+ hCap:["Түркия","Әзірбайжан","Армения"],
+ rTag:"Пікірлер", rH:"Саяхатшылар не дейді",
+ revs:[
+  ["Мадина К.","Алматы","Түркия",5,"Сумеланы таңертең жұрынсыз көру — керемет. Мардинде үй иесі кофе қайнатуды өзі үйретті."],
+  ["Алия С.","Астана","Корея",5,"Тэгу күтпеген жаңалық болды: таңертең жорық, кешке жылы шай. Жалғыз бір рет те қорықпадым."],
+  ["Жанна Т.","Шымкент","Армения",5,"4 күнде ойлағаннан көп көрдім. Үнемді, жанға жайлы, топ шағын."],
+  ["Дина Р.","Қарағанды","Әзірбайжан",5,"Хыналыг — басқа планета сияқты. Әйелдер хостелі мен әр ұсақ-түйекке көңіл бөлгеніңе рахмет."],
+  ["Сабина Н.","Ақтау","Түркия",5,"Маған жекелік маңызды, тұру орны жақсы ойластырылған. Халал тізімі көп көмектесті."],
+  ["Лейла А.","Алматы","Корея",5,"Чеджу мен Олле соқпағы — арман. Асығыссыз ұйым, «50 нүкте» жоқ."],
+  ["Айгерим Б.","Тараз","Әзірбайжан",5,"Шеки мен пахлава — бөлек махаббат! Топтағы қыздар дос болды."],
+  ["Камила М.","Астана","Армения",4,"Қыста Дилижан ертегідей болды. Жазда да барғым келеді."],
+  ["Алина Ж.","Алматы","Корея",5,"Шетелге алғаш рет жалғыз бардым — бұл өмірімдегі ең жылы саяхат."]
+ ],
+ safeH:"Тыныш саяхат: 4 қарапайым ереже",
+ safe:[["Маршрутпен бөліс","Түнейтін мекенжай мен рейс нөмірін жақындарыңа жібер."],["Күн батқанша жетіп ал","Алғашқы орналасуды күндіз жоспарла."],["Пікірлерді оқы","Әйел саяхатшылардың пікірлерін қара."],["Жергілікті дәстүрді құрметте","Жеңіл орамал мен жабық киім ғибадатханаларда керек."]],
+ kTag:"Байланыс", kH:"Бірге турыңды таңдайық", kP:"WhatsApp немесе Instagram-ға жаз: бағыт, күн және бюджет — күн ішінде жауап беремін.",
+ foot:"Фото: Wikimedia Commons (еркін лицензиялар). Emerald Tours — табиғатқа қамқормен 🌱"
+},
+en:{
+ nav:["Hello","Tours","Stays","Halal","Reviews","Contact"],
+ heroTag:"Off-the-beaten-path tours for solo women",
+ heroH:"Travel solo — and never feel alone",
+ heroP:"Emerald Tours offers ready-made routes to places few tourists reach. Small groups, women's rooms and a warm atmosphere.",
+ heroB1:"Choose a tour", heroB2:"Message on WhatsApp",
+ wTag:"Welcome", wH:"Hi! I'm Aimira, and these are my favourite routes",
+ wP1:"I travel solo myself and know what ordinary tours miss: calm, clean and safe places, and time to just sit with a cup of tea and watch the mountains.",
+ wP2:"Here you'll find ready-made “unusual” tours: instead of queues at the main sights — villages, trails, quiet cafés and homes of local women.",
+ how:"⏱ In 10 minutes: 1 min — pick a destination · 6 min — tour and places · 3 min — stays, halal, reviews.",
+ pr:[["🌿","Eco-minded","Local transport, walking trails, family guesthouses and cafés with local beans."],["🌸","Comfort for everyone","Private rooms, women's floors, quiet spots. We respect every traveller's modest style and personal boundaries."],["☕","No rush","Not “50 sights a day”, but 2–3 places and time to feel the city."]],
+ cTag:"Destinations", cH:"Where to?", cP:"Four ready-made tours. Nearby ones are budget weekend trips; farther ones take 1–2 weeks.",
+ days:"days", from:"Price on request via WhatsApp", seeTour:"See tour",
+ labelDays:"Day-by-day", labelPlaces:"📍 Places", labelCafe:"☕ Cafés & tea houses", labelHidden:"🗝 Hidden spots",
+ askTour:"I want this tour",
+ tours:{
+  turkey:{name:"Turkey: Trabzon & Mardin", sub:"Black Sea mist and the stone city of Mesopotamia", season:"Best: May–June, September",
+   plan:["Trabzon: centre and Boztepe tea terraces","Sumela Monastery in the morning, Uzungöl at dusk","Sera Lake and mountain trails","Flight to Mardin","Old town of Mardin","Deyrulzafaran and ancient Dara","Savur and free time"],
+   places:["Sumela Monastery — arrive at opening","Uzungöl — lake and wooden houses","Kasımiye and Zinciriye madrasas","Deyrulzafaran at sunrise"],
+   cafe:["Boztepe tea gardens with sea views","Rooftop terraces of Mardin","Mardin “dibek” coffee with a resinous aroma"],
+   hidden:["Sera Lake in Maçka — silence and fog","Hıdırnebi highland meadows","Savur — a town frozen in time"]},
+  korea:{name:"Korea: Jeju, Busan & Daegu", sub:"Ocean, colourful hillsides and mountain hiking", season:"Best: April–May, October",
+   plan:["Jeju: Seongsan Ilchulbong and the coast","Olle trails, seaside cafés","Hallasan — volcano hike","Flight to Busan, Gamcheon","Haeundae, Haedong Yonggungsa sea temple","Daegu: Palgongsan mountains","Daegu: Apsan hike, night markets"],
+   places:["Seongsan Ilchulbong — sunrise on the crater","Gamcheon Culture Village, Busan","Palgongsan and cable car, Daegu","Apsan — city trail with views over Daegu"],
+   cafe:["Coastal cafés on Jeju","Tiny cafés in Gamcheon's alleys","Tea houses in Daegu after hiking"],
+   hidden:["Udo Island off Jeju — by bike","Olle trails few people walk","Quiet Apsan paths at sunset"]},
+  armenia:{name:"Armenia, away from the crowds", sub:"Monasteries, a lake and wine — for a short break", season:"Best: May, September",
+   plan:["Yerevan: Cascade and evening streets","Khor Virap and Areni wine","Garni, Geghard","Sevan and Dilijan","Free morning in Yerevan"],
+   places:["Khor Virap — the best view of Ararat","Garni and Geghard","Sevanavank at sunrise","Dilijan forests"],
+   cafe:["Cafés by the Cascade","Eastern-style coffee on hot sand","Homemade gata in Dilijan"],
+   hidden:["Haghpat and Sanahin in the Debed gorge","Areni village and its vineyards","Lake Sevan off-season"]},
+  azerbaijan:{name:"Azerbaijan: Sheki & Khinalug", sub:"Old Baku, the silk city and high mountains", season:"Best: April–June, September",
+   plan:["Baku: Icheri Sheher and the seafront","Gobustan and mud volcanoes","Road to Sheki","Khan's Palace and caravanserai","Khinalug: a night in the mountains","Lahij and return"],
+   places:["Icheri Sheher and Maiden Tower","Sheki Khan's Palace","Gobustan — rock art","Sheki caravanserais"],
+   cafe:["Tea houses serving armudu glasses","Sheki pakhlava","Cafés on Nizami Street"],
+   hidden:["Khinalug — one of the highest villages in the Caucasus","Lahij — coppersmiths' village","Old mosques around Sheki"]}
+ },
+ sTag:"Stays", sH:"Hotels & hostels for women", sP:"Trusted homes with women's rooms, privacy and caring hosts. Suitable for every traveller, including those who prefer a covered, modest style.",
+ stays:[
+  ["Trabzon","Yeşil Çay Konağı","Family pension run by a hostess, homemade breakfast overlooking tea hills.",["Female host","Private courtyard"]],
+  ["Mardin","Taş Avlu Hanım Evi","Stone house with a closed courtyard in the old town. Breakfast can be served in your room.",["Closed courtyard","Quiet"]],
+  ["Jeju","Tangerine Women's Guesthouse","Women-only guesthouse by the coast with a tangerine garden and shared kitchen.",["Women only","Kitchen"]],
+  ["Busan","Gamcheon Sora Hostel","Female dorms and a shared terrace overlooking the coloured houses.",["Female dorm","Terrace"]],
+  ["Daegu","Palgong Pine Stay","A home at the foot of the mountains for hikers: drying room and early breakfast.",["For hikers","Early breakfast"]],
+  ["Yerevan","Apricot Courtyard Hostel","Women's room two steps from the Cascade, with a closed courtyard.",["Women's room","Central"]],
+  ["Dilijan","Linden House","Wooden house in the forest; the hostess cooks homemade breakfasts.",["Family home","Quiet"]],
+  ["Baku","Pomegranate Courtyard Hostel","Hostel in the old town with women's rooms and a 24/7 front desk.",["Women's rooms","24/7"]],
+  ["Sheki","Silk Road Guesthouse","Guesthouse by the caravanserai: private rooms and a veranda.",["Private","Veranda"]]
+ ],
+ hTag:"Halal guide", hH:"Tasty and calm: food without questions", hP:"A selection where halal or suitable food is easy to find. In every destination I'll point out places near your stay.",
+ halal:[["🇹🇷 Turkey","Halal almost everywhere: kebabs, pide, lahmacun, local sweets."],["🇦🇿 Azerbaijan","Plov, dushbara, qutab — familiar food at every step."],["🇦🇲 Armenia","Lavash, vegetables, cheeses; we find halal places in Yerevan in advance."],["🇰🇷 Korea","Halal restaurants in Seoul, Busan and Daegu; on Jeju — seafood and vegetarian cafés."],["📱 Tip","“Halal” filter in maps, a list of places and prayer rooms — included in the tour pack."]],
+ hCap:["Turkey","Azerbaijan","Armenia"],
+ rTag:"Reviews", rH:"What travellers say",
+ revs:[
+  ["Madina K.","Almaty","Turkey",5,"Sumela at sunrise with no crowds was unreal. In Mardin our hostess taught me to brew coffee herself."],
+  ["Aliya S.","Astana","Korea",5,"Daegu was an unexpected discovery: hiking in the morning, warm tea in the evening. I never once felt unsafe."],
+  ["Zhanna T.","Shymkent","Armenia",5,"In 4 days I saw more than I expected. Budget-friendly, heartfelt, a small group."],
+  ["Dina R.","Karaganda","Azerbaijan",5,"Khinalug felt like another planet. Thank you for the women's hostel and care for every detail."],
+  ["Sabina N.","Aktau","Turkey",5,"Privacy matters to me, and the stays were well thought out. The halal list helped a lot."],
+  ["Leila A.","Almaty","Korea",5,"Jeju and the Olle trails are a dream. Calm organisation, no “50 sights a day”."],
+  ["Aigerim B.","Taraz","Azerbaijan",5,"Sheki and its pakhlava — love! The girls in the group became friends."],
+  ["Kamila M.","Astana","Armenia",4,"Dilijan in winter was a fairy tale. I want to go back in summer."],
+  ["Alina Zh.","Almaty","Korea",5,"My first trip abroad alone — and the warmest journey of my life."]
+ ],
+ safeH:"A calm trip: 4 simple rules",
+ safe:[["Share your route","Send addresses and flight numbers to someone close."],["Check in before sunset","Plan your first arrival in daylight."],["Read reviews","Look at reviews by women travellers."],["Respect local norms","A light scarf and covered clothing help at temples."]],
+ kTag:"Contact", kH:"Let's choose your tour", kP:"Write on WhatsApp or Instagram: destination, dates and budget — I reply within a day.",
+ foot:"Photos: Wikimedia Commons (free licences). Emerald Tours — travelling gently 🌱"
+}};
+
+/* ---------- Рендер ---------- */
+const $ = s => document.querySelector(s);
+const li = a => a.map(x=>`<li>${x}</li>`).join("");
+const img = (f,alt,lazy=true)=>`<img src="images/${f}.jpg" alt="${alt}" ${lazy?'loading="lazy"':''}>`;
+
+const fmtPrice = n => new Intl.NumberFormat("ru-RU").format(n).replace(/ /g," ");
+const fmtDate = (d,loc) => new Date(d+"T12:00:00").toLocaleDateString(loc,{day:"numeric",month:"long",year:"numeric"});
+let selected = {tour:"", pkg:"simple", date:""};
+
+function render(lang){
+  const t = L[lang], xx = X[lang]; document.documentElement.lang = lang;
+  const ids = ["welcome","tours","stays","halal","reviews","contacts"];
+  $("#links").innerHTML = t.nav.map((n,i)=>`<a href="#${ids[i]}">${n}</a>`).join("");
+  document.querySelectorAll("#lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===lang));
+
+  const tourHTML = TOURS.map((o,i)=>{
+    const x = t.tours[o.id];
+    return `<section class="route ${i%2?'alt':''}" id="${o.id}"><div class="wrap">
+     <div class="route-head"><div>
+       <span class="eyebrow">${o.flag} ${x.sub}</span><h2>${x.name}</h2>
+       <div class="facts"><span>${o.d} ${t.days}</span><span>${x.season}</span><span class="price">${t.from}</span></div>
+     </div>
+     <div class="photos">${o.photos.map((p,k)=>`<figure>${img(p,o.cap[k])}<figcaption>${o.cap[k]}</figcaption></figure>`).join("")}</div></div>
+     <h3 class="sub">${t.labelDays}</h3>
+     <div class="days">${x.plan.map((d,k)=>`<div class="day"><b>${k+1}</b>${d}</div>`).join("")}</div>
+     <div class="cards">
+       <div class="card"><h4>${t.labelPlaces}</h4><ul>${li(x.places)}</ul></div>
+       <div class="card"><h4>${t.labelCafe}</h4><ul>${li(x.cafe)}</ul></div>
+       <div class="card hidden"><h4>${t.labelHidden}</h4><ul>${li(x.hidden)}</ul></div>
+     </div>
+     <div class="pk-wrap"><h3 class="sub" style="margin:0">${xx.pkgH}</h3>
+      <div class="pk-grid">
+       ${["simple","pro"].map(k=>`<div class="pk ${k}"><h4>${xx[k]}</h4><div class="pr">${fmtPrice(o[k])} ₸ <small>${xx.per}</small></div>
+        <ul>${li(xx[k+"Inc"])}</ul><button class="btn" data-pick="${o.id}" data-pkg="${k}">${xx.pick}</button></div>`).join("")}
+      </div>
+      <div class="dates"><b>${xx.dates}</b>${o.dates.map(d=>`<button data-pick="${o.id}" data-date="${d}">${fmtDate(d,xx.loc)}</button>`).join("")}</div>
+      <p class="pknote">${xx.note}</p></div>
+    </div></section>`;
+  }).join("");
+
+  $("#app").innerHTML = `
+  <header class="hero" id="top"><div class="bg">${img("hero","Uzungöl",false)}</div><div class="wrap">
+    <span class="eyebrow" style="color:#f2d9c5">${t.heroTag}</span><h1>${t.heroH}</h1><p>${t.heroP}</p>
+    <a class="btn btn-primary" href="#tours">${t.heroB1}</a><a class="btn btn-ghost" href="${WA}">${t.heroB2}</a></div></header>
+
+  <section class="welcome" id="welcome"><div class="wrap welcome-grid"><div>
+    <span class="eyebrow">${t.wTag}</span><h2>${t.wH}</h2><p>${t.wP1}</p><p>${t.wP2}</p><p class="how">${t.how}</p></div>
+    <div class="principles">${t.pr.map(p=>`<div class="principle"><span class="ic">${p[0]}</span><div><b>${p[1]}</b>${p[2]}</div></div>`).join("")}</div></div></section>
+
+  <section id="tours"><div class="wrap"><div class="section-head"><span class="eyebrow">${t.cTag}</span><h2>${t.cH}</h2><p class="lead">${t.cP}</p></div>
+   <div class="countries">${TOURS.map(o=>`<a class="country" href="#${o.id}">${img(o.card,t.tours[o.id].name)}<div><h3>${o.flag} ${t.tours[o.id].name.split(":")[0].split(",")[0]}</h3><small>${t.tours[o.id].sub}</small><span class="dur">${o.d} ${t.days}</span></div></a>`).join("")}</div></div></section>
+
+  ${tourHTML}
+
+  <section class="stays" id="stays"><div class="wrap"><div class="section-head"><span class="eyebrow">${t.sTag}</span><h2>${t.sH}</h2><p class="lead">${t.sP}</p></div>
+   <div class="stay-grid">${t.stays.map(s=>`<div class="stay"><span class="city">${s[0]}</span><h4>${s[1]}</h4><p>${s[2]}</p><div class="chips">${s[3].map(c=>`<span>${c}</span>`).join("")}</div></div>`).join("")}</div></div></section>
+
+  <section id="halal"><div class="wrap halal-grid"><div>
+   <span class="eyebrow">${t.hTag}</span><h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:12px">${t.hH}</h2><p class="lead" style="margin-bottom:22px">${t.hP}</p>
+   <div class="halal-photos">${HALALPH.map((p,k)=>`<figure>${img(p,t.hCap[k])}<figcaption>${t.hCap[k]}</figcaption></figure>`).join("")}</div></div>
+   <div class="halal-list">${t.halal.map(h=>`<div class="halal-item"><b>${h[0]}</b><span>${h[1]}</span></div>`).join("")}</div></div></section>
+
+  <section class="reviews" id="reviews"><div class="wrap"><div class="section-head"><span class="eyebrow">${t.rTag}</span><h2>${t.rH}</h2></div>
+   <div class="rev-grid">${t.revs.map(r=>`<div class="rev"><div class="stars">${"★".repeat(r[3])}${"☆".repeat(5-r[3])}</div><p>${r[4]}</p><footer><b>${r[0]}</b>${r[1]} · ${r[2]}</footer></div>`).join("")}</div></div></section>
+
+  <section class="safety"><div class="wrap"><h2>${t.safeH}</h2><div class="safety-grid">${t.safe.map(s=>`<div><b>${s[0]}</b>${s[1]}</div>`).join("")}</div></div></section>
+
+  <section class="contacts" id="contacts"><div class="wrap"><span class="eyebrow">${t.kTag}</span><h2>${t.kH}</h2><p class="lead">${t.kP}</p>
+   <h3 style="margin-bottom:6px">${xx.fH}</h3><p class="or">${xx.fOr}</p>
+   <form class="form" id="form">
+    <label>${xx.fName}<input name="name" required></label>
+    <label>${xx.fContact}<input name="contact" required placeholder="+7… / @instagram"></label>
+    <label>${xx.fTour}<select name="tour" id="f-tour">${TOURS.map(o=>`<option value="${o.id}">${o.flag} ${t.tours[o.id].name}</option>`).join("")}</select></label>
+    <label>${xx.fPkg}<select name="pkg" id="f-pkg"><option value="simple">${xx.simple}</option><option value="pro">${xx.pro}</option></select></label>
+    <label>${xx.fDate}<select name="date" id="f-date"></select></label>
+    <label>${xx.fPeople}<input name="people" type="number" min="1" max="10" value="1"></label>
+    <label class="full">${xx.fComment}<textarea name="comment" rows="3"></textarea></label>
+    <button type="submit">💬 ${xx.fSend}</button><p class="fnote">${xx.fNote}</p>
+   </form>
+   <div class="contact-row"><a class="c-wa" href="${WA}">💬 WhatsApp</a><a class="c-ig" href="${IG}">📷 Instagram</a></div></div></section>
+
+  <footer class="foot"><div class="wrap">${t.foot}<br>emeraldtours.kz</div></footer>`;
+  bindForm(lang);
+}
+
+function bindForm(lang){
+  const xx = X[lang], t = L[lang];
+  const fT=$("#f-tour"), fP=$("#f-pkg"), fD=$("#f-date");
+  const fillDates = () => {
+    const o = TOURS.find(x=>x.id===fT.value);
+    fD.innerHTML = `<option value="">${xx.fAny}</option>` + o.dates.map(d=>`<option value="${d}">${fmtDate(d,xx.loc)}</option>`).join("");
+  };
+  fT.value = selected.tour || TOURS[0].id; fillDates();
+  fP.value = selected.pkg; fD.value = selected.date;
+  fT.onchange = () => { selected.tour = fT.value; selected.date = ""; fillDates(); };
+  fP.onchange = () => selected.pkg = fP.value;
+  fD.onchange = () => selected.date = fD.value;
+  document.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{
+    selected.tour = b.dataset.pick;
+    if(b.dataset.pkg) selected.pkg = b.dataset.pkg;
+    if(b.dataset.date) selected.date = b.dataset.date; else if(!b.dataset.date) selected.date = "";
+    fT.value = selected.tour; fillDates(); fP.value = selected.pkg; fD.value = selected.date;
+    $("#form").scrollIntoView({behavior:"smooth",block:"center"});
+  });
+  $("#form").onsubmit = e => {
+    e.preventDefault();
+    const f = new FormData(e.target), o = TOURS.find(x=>x.id===f.get("tour"));
+    const text = xx.msg({name:f.get("name"), contact:f.get("contact"), tour:t.tours[o.id].name,
+      pkg: xx[f.get("pkg")] + " — " + fmtPrice(o[f.get("pkg")]) + " ₸",
+      date: f.get("date") ? fmtDate(f.get("date"),xx.loc) : xx.fAny, people:f.get("people"), comment:f.get("comment")});
+    window.open(WA + "?text=" + encodeURIComponent(text), "_blank", "noopener");
+  };
+}
+
+let lang = "ru";
+try{ lang = localStorage.getItem("lang") || ((navigator.language||"").startsWith("kk")?"kk":(navigator.language||"").startsWith("en")?"en":"ru"); }catch(e){}
+document.getElementById("lang").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b) return;
+  lang=b.dataset.l; try{localStorage.setItem("lang",lang)}catch(e){} render(lang);
+});
+render(lang);
+</script>
+</body>
+</html>
